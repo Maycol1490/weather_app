@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+/*! Loading */
+.container_loading{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.spinner {
+    height: 50px;
+    width: max-content;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: 1em;
+    color: #182747;
+    filter: drop-shadow(0 0 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .spinner span {
+    animation: loading6454 1.75s ease infinite;
+   }
+   
+   .spinner span:nth-child(2),span:nth-child(8),span:nth-child(14) {
+    animation-delay: 0.25s;
+   }
+   
+   .spinner span:nth-child(3),span:nth-child(9),span:nth-child(15) {
+    animation-delay: 0.5s;
+   }
+   
+   .spinner span:nth-child(4),span:nth-child(10),span:nth-child(16) {
+    animation-delay: 0.75s;
+   }
+   
+   .spinner span:nth-child(5),span:nth-child(11) {
+    animation-delay: 1s;
+   }
+   
+   .spinner span:nth-child(6),span:nth-child(12) {
+    animation-delay: 1.25s;
+   }
+   
+   .spinner span:nth-child(7),span:nth-child(13) {
+    animation-delay: 1.5s;
+   }
+   
+   
+   @keyframes loading6454 {
+    0%, 100% {
+     transform: translateY(0);
+    }
+   
+    50% {
+     transform: translateY(-10px);
+    }
+   }
+   .App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   }
+   /*! card_weather */
+   .container_inf{
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   }
+   .principal_inf{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height: 50%;
+    align-items: center;
+    margin:auto;
+    margin-top: 20px;
+   }
+   /*! poner la clase tarjeta */
+   .location_inf{
+    margin-top: 100px;
+    font-size: 35px;
+   }
+   .time{
+    margin-top: 100px;
+    color: #fff;
+    font-size: 35px;
+   }
+   .lista_inf{
+    display: flex;
+    gap: 3rem;
+    justify-content:center;  
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   }
+   .icono_inf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   /*!card child  */
+   .container_child{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0005;
+    border-radius: 20px;
+    box-shadow: .2em .2em .2em #fff9;
+    color: #fff;
+    margin: auto;
+    border: 15px 15px;
+    padding: 15px 15px;
+
+   }
+   .Card_child{
+    display: flex;
+    margin: auto;
+    border: 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+   }
+   .tarjeta{
+    background-color: #0005;
+    border-radius: 20px;
+    box-shadow: .2em .2em .2em #fff9;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px;
+    
+   }
+   /*! Boton */
+   .btn {
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    margin-top: 10spx;
+    border-radius: 5px;
+    transition: all .4s;
+   }
+   
+   .btn:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+     0 15px 0 -4px #39a2db,
+     0 16px 10px -3px #39a2db;
+   }
+   
+   .btn:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+     0 8px 0 -4px #39a2db,
+     0 12px 10px -3px #39a2db;
+   }
