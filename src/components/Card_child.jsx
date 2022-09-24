@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react'
-import { ImLocation, ImDroplet, ImCloud, ImSortAmountAsc, ImForward3 } from "react-icons/im"
-import { FaTemperatureLow } from "react-icons/Fa"
+import { ImLocation} from "react-icons/im"
 import { useEffect } from 'react'
 import { useState } from 'react'
 
