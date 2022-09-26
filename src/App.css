@@ -186,7 +186,7 @@ img{
     .principal_inf{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
     }
     .location_inf{
         max-width: 100%;
@@ -209,5 +209,7 @@ img{
     }
     .Card_child{
         max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
    }
