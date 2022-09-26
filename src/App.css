@@ -184,6 +184,7 @@ img{
    
    @media screen and (max-width :800px){
     .principal_inf{
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         max-width: 100%;
@@ -200,6 +201,8 @@ img{
         margin-top: 25px;
     }
     .lista_inf{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
         max-width: 100%;
     }
     .container_child{
