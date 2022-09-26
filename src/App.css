@@ -37,27 +37,27 @@ img{
     animation: loading6454 1.75s ease infinite;
    }
    
-   .spinner span:nth-child(2),span:nth-child(8),span:nth-child(14) {
+   .spinner span:nth-child(2),span:nth-child(8) {
     animation-delay: 0.25s;
    }
    
-   .spinner span:nth-child(3),span:nth-child(9),span:nth-child(15) {
+   .spinner span:nth-child(3),span:nth-child(9){
     animation-delay: 0.5s;
    }
    
-   .spinner span:nth-child(4),span:nth-child(10),span:nth-child(16) {
+   .spinner span:nth-child(4),span:nth-child(10){
     animation-delay: 0.75s;
    }
    
-   .spinner span:nth-child(5),span:nth-child(11) {
+   .spinner span:nth-child(5){
     animation-delay: 1s;
    }
    
-   .spinner span:nth-child(6),span:nth-child(12) {
+   .spinner span:nth-child(6){
     animation-delay: 1.25s;
    }
    
-   .spinner span:nth-child(7),span:nth-child(13) {
+   .spinner span:nth-child(7){
     animation-delay: 1.5s;
    }
    
