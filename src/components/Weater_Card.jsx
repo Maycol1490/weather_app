@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { ImLocation, ImDroplet, ImCloud, ImSortAmountAsc, ImForward3 } from "react-icons/im"
 import Card_child from './Card_child'
-import soleados from '../assets/soleado.jpg'
-import lluviosos from '../assets/lluvioso.jpg'
+import soleados from '../assets/soleado.jpeg'
+import lluviosos from '../assets/lluvioso.webp'
 import truenos from '../assets/trueno.jpg'
 import nevados from '../assets/nevando.jpg'
-import nublados from '../assets/nublado.jpg'
+import nublados from '../assets/nublado.webp'
+import noches from '../assets/noche.jpg'
 
 const Weater_Card = ({ temperature, weater }) => {
     const [celsius, setCelsius] = useState(true)
@@ -17,8 +18,9 @@ const Weater_Card = ({ temperature, weater }) => {
     let trueno = { backgroundImage: `url(${truenos})` }
     let nevando = { backgroundImage: `url(${nevados})` }
     let nublado = { backgroundImage: `url(${nublados})` }
+    let noche = { backgroundImage: `url(${noches})` }
     const fondo = () => {
-        if (weater.weather[0].icon == "01d"||"01n" || weater.weather[0].icon == "02d"||"02n" || weater.weather[0].icon == "03d"||"03n" || weater.weather[0].icon == "04d"||"04n") {
+        if (weater.weather[0].icon == "01d"|| weater.weather[0].icon == "02d"|| weater.weather[0].icon == "03d"|| weater.weather[0].icon == "04d") {
             return soleado
         } else if (weater.weather[0].icon == "09d"||"09n" || weater.weather[0].icon == "10d"||"10n") {
             return lluvia
@@ -28,6 +30,8 @@ const Weater_Card = ({ temperature, weater }) => {
             return nevando
         } else if (weater.weather[0].icon == "50d"||"50n") {
             return nublado
+        }else if(weater.weather[0].icon == "01n" || weater.weather[0].icon == "02n"|| weater.weather[0].icon == "03n" || weater.weather[0].icon == "04n"){
+            return noche
         }
     }
     console.log(weater?.weather[0].icon);

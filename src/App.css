@@ -82,7 +82,8 @@ img{
    }
    /*! card_weather */
    .container_inf{
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -98,7 +99,6 @@ img{
     margin:auto;
     margin-top: 20px;
    }
-   /*! poner la clase tarjeta */
    .location_inf{
     margin-top: 100px;
     font-size: 35px;
@@ -141,6 +141,21 @@ img{
     border: 5px 5px;
     margin-left: 5px;
     margin-right: 5px;
+   }
+   .temperatura_inf{
+    border-bottom: solid #fff2;
+   }
+   .humidity_inf{
+    border-bottom: solid #fff2;
+   }
+   .pressure_inf{
+    border-bottom: solid #fff2;
+   }
+   .clouds_inf{
+    border-bottom: solid #fff2;
+   }
+   .speed_inf{
+    border-bottom: solid #fff2;
    }
    .tarjeta{
     background-color: #0005;
