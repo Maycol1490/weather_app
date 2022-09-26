@@ -183,6 +183,9 @@ img{
    }
    
    @media screen and (max-width :800px){
+    .container_loading{
+        max-width: 100%;
+    }
     .principal_inf{
         overflow-x: hidden;
         display: flex;
