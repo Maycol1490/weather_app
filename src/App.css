@@ -6,7 +6,9 @@
 ul{
     list-style: none;
 }
-
+img{
+    max-width: 100%;
+}
 /*! Loading */
 .container_loading{
     width: 100%;
@@ -166,7 +168,7 @@ ul{
    
    .btn:hover {
     border-radius: 5px;
-    transform: translateY(-10px);
+    transform: translatex(-10px);
     box-shadow: 0 7px 0 -2px #f85959,
      0 15px 0 -4px #39a2db,
      0 16px 10px -3px #39a2db;
@@ -174,8 +176,38 @@ ul{
    
    .btn:active {
     transition: all 0.2s;
-    transform: translateY(-5px);
+    transform: translatex(-5px);
     box-shadow: 0 2px 0 -2px #f85959,
      0 8px 0 -4px #39a2db,
      0 12px 10px -3px #39a2db;
+   }
+   
+   @media screen and (max-width :800px){
+    .principal_inf{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .location_inf{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .icono_inf{
+        max-width: 100%;
+    }
+    .time{
+        max-width: 100%;
+        margin-top: 25px;
+    }
+    .lista_inf{
+        max-width: 100%;
+    }
+    .container_child{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Card_child{
+        max-width: 100%;
+    }
    }

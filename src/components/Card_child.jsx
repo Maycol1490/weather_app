@@ -38,7 +38,7 @@ const Card_child = ({ contryName }) => {
           <h4><span>{child?.clouds.all}%</span></h4>
         </div>
         <div className="speed_inf">
-          <h3>velocidad de nubes</h3>
+          <h3>cloud speed</h3>
           <h4>{child?.wind.speed}m/s</h4>
         </div>
       </div>
